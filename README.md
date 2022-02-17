@@ -7,7 +7,7 @@ Dopo aver rilevato l’oggetto mentre transita sul nastro, modificherà un bit d
 Schema elettrico
 ---------------------
 
-![image](https://user-images.githubusercontent.com/97526576/154546160-23bbed77-7a4f-4b22-b643-86919fc6b45e.PNG)
+![ultrasuoni](https://user-images.githubusercontent.com/97526576/154546792-01854a83-a27f-4cdd-9cee-2ec075bfbca7.PNG)
 
 
 Download Test Ultrasuoni
