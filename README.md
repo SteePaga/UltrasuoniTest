@@ -21,4 +21,4 @@ Compilazione
 Il programma è stato testato con Keil uVision V5
 
 ### Note
-lo script clean_project.bat permette di eliminare i file generati dal compilatore
+Questo programma va unito insieme agli altri test delle rispettive task, per poter implementare il progetto completo del rullo trasportatore.
