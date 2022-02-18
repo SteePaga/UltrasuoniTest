@@ -6,6 +6,20 @@ Introduzione teorica SFR05
 
 L'SRF05 è un’evoluzione dell'SRF04 ed è stato progettato per aumentarne la flessibilità, aumentare la portata e ridurre ulteriormente i costi. In quanto tale, l'SRF05 è completamente compatibile con l'SRF04. La portata è aumentata da 3 metri a 4 metri. Una nuova modalità operativa (che collega il pin della modalità a massa) consente all'SRF05 di utilizzare un singolo pin sia per il trigger che per l'eco, risparmiando così preziosi pin sul controller. Quando il pin della modalità viene lasciato scollegato, l'SRF05 funziona con trigger separati e pin di eco, come l'SRF04. L'SRF05 include un piccolo ritardo prima dell'impulso di eco per dare ai controller più lenti come il Basic Stamp e il Picaxe il tempo di eseguire il loro impulso nei comandi.
 
+Specifiche SFR05
+---------------------
+
+Tensione Operativa        5V
+Corrente Operativa Tipica    4mA
+Frequenza                40 Khz
+Portata                1cm - 4mt
+Dimensioni            43 x 20 x H 17 mm
+
+Impulso di ritorno: Segnale TTL positivo, di durata proporzionale alla distanza rilevata.
+Trigger di Input: Impulso TTL di durata minima di 10 uS.
+Modalità di funzionamento: Pin singolo per trig/echo o 2 Pin SRF04 compatibile.
+
+
 Funzionamento della task
 ---------------------
 
