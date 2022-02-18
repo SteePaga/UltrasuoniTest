@@ -9,11 +9,11 @@ L'SRF05 è un’evoluzione dell'SRF04 ed è stato progettato per aumentarne la f
 Specifiche SFR05
 ---------------------
 
-Tensione Operativa        5V
+Tensione Operativa           5V
 Corrente Operativa Tipica    4mA
-Frequenza                40 Khz
-Portata                1cm - 4mt
-Dimensioni            43 x 20 x H 17 mm
+Frequenza                    40 Khz
+Portata                      1cm - 4mt
+Dimensioni                  43 x 20 x H 17 mm
 
 Impulso di ritorno: Segnale TTL positivo, di durata proporzionale alla distanza rilevata.
 Trigger di Input: Impulso TTL di durata minima di 10 uS.
