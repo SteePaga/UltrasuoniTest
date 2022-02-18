@@ -6,6 +6,9 @@ Introduzione teorica SFR05
 
 L'SRF05 è un’evoluzione dell'SRF04 ed è stato progettato per aumentarne la flessibilità, aumentare la portata e ridurre ulteriormente i costi. In quanto tale, l'SRF05 è completamente compatibile con l'SRF04. La portata è aumentata da 3 metri a 4 metri. Una nuova modalità operativa (che collega il pin della modalità a massa) consente all'SRF05 di utilizzare un singolo pin sia per il trigger che per l'eco, risparmiando così preziosi pin sul controller. Quando il pin della modalità viene lasciato scollegato, l'SRF05 funziona con trigger separati e pin di eco, come l'SRF04. L'SRF05 include un piccolo ritardo prima dell'impulso di eco per dare ai controller più lenti come il Basic Stamp e il Picaxe il tempo di eseguire il loro impulso nei comandi.
 
+![image](https://user-images.githubusercontent.com/97526576/154640828-0f4533c5-5116-4888-8693-2733be6a6fb4.png)
+
+
 Specifiche SFR05
 ---------------------
 
