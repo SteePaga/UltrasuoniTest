@@ -47,6 +47,7 @@ Schema elettrico
 Download Test Ultrasuoni
 ---------------------
 
+Per scaricare il programma eseguire questo comando; <br>
 git clone https://github.com/SteePaga/UltrasuoniTest.git
 
 Compilazione
