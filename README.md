@@ -3,7 +3,7 @@ Documentazione Test Ultrasuoni
 
 1. [Introduzione teorica](#Introduzioneteorica)
 2. [Specifiche](#Specifiche)
-3. [Funzionamento della task](#Funzionamentotask)
+3. [Funzionamento della task](#Funzionamento-della-task)
 4. [Schema elettrico](#Schemaelettrico)
 5. [Download](#Download)
 6. [Compilazione](#Compilazione)
