@@ -1,11 +1,11 @@
 Documentazione Test Ultrasuoni 
 =========
 
-1. [Introduzione teorica](#Introduzioneteorica)
-2. [Specifiche](#Specifiche)
+1. [Introduzione teorica](#Introduzione-teorica-SFR05)
+2. [Specifiche](#Specifiche-SFR05)
 3. [Funzionamento della task](#Funzionamento-della-task)
-4. [Schema elettrico](#Schemaelettrico)
-5. [Download](#Download)
+4. [Schema elettrico](#Schema-elettrico)
+5. [Download](#Download-Test-Ultrasuoni)
 6. [Compilazione](#Compilazione)
 7. [Note](#Note)
 
