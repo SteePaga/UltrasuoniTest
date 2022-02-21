@@ -58,4 +58,5 @@ Il programma è stato testato con Keil uVision V5
 Questo programma va unito insieme agli altri test delle rispettive task, per poter implementare il progetto completo del rullo trasportatore. <br>
 Link al progetto completo : https://drive.google.com/drive/folders/1DELfbtvsyqDubmVxufoYO7MtyMC3l895?usp=sharing
 
-**Stefano Pagano**
+![IMG_2635](https://user-images.githubusercontent.com/97526576/155039762-2a09c052-3a0a-4c58-9748-8a378ccf16a5.jpg)
+
