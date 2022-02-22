@@ -41,7 +41,8 @@ Dopo aver rilevato l’oggetto mentre transita sul nastro, modificherà un bit d
 Schema elettrico
 ---------------------
 
-![ultrasuoni](https://user-images.githubusercontent.com/97526576/154546792-01854a83-a27f-4cdd-9cee-2ec075bfbca7.PNG)
+![ultrasuoni](https://user-images.githubusercontent.com/97526576/154546792-01854a83-a27f-4cdd-9cee-2ec075bfbca7.PNG) <br>
+Utilizziamo il timer PB6 (TIM4_CH1_PWM) per il Trigger e il timer PA5 (TIM2_CH1_InCapt_SM) per l'Echo.
 
 
 Download Test Ultrasuoni
@@ -53,7 +54,7 @@ git clone https://github.com/SteePaga/UltrasuoniTest.git
 Compilazione
 --------------------
 
-Il programma è stato testato con Keil uVision V5
+Il programma è stato testato con Keil uVision V5.
 
 ### Note
 Questo programma va unito insieme agli altri test delle rispettive task, per poter implementare il progetto completo del rullo trasportatore. <br>
