@@ -21,11 +21,11 @@ Per altri approfondimenti : [fblabs](https://docs.google.com/presentation/d/1ncb
 Specifiche SFR05
 ---------------------
 
-Tensione Operativa           5V <br>
-Corrente Operativa Tipica    4mA <br>
-Frequenza                    40 Khz <br>
-Portata                      1cm - 4mt <br>
-Dimensioni                   43 x 20 x H 17 mm <br>
+* Tensione Operativa           5V <br>
+* Corrente Operativa Tipica    4mA <br>
+* Frequenza                    40 Khz <br>
+* Portata                      1cm - 4mt <br>
+* Dimensioni                   43 x 20 x H 17 mm <br>
 
 Impulso di ritorno: Segnale TTL positivo, di durata proporzionale alla distanza rilevata. <br>
 Trigger di Input: Impulso TTL di durata minima di 10 uS. <br>
