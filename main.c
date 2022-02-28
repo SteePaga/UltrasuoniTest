@@ -12,6 +12,7 @@
 #include "Led.h"
 #include "Ultrasuoni.h"
 
+EventGroupHandle_t xRullo;
 
 int main(void) {
 	pllInit(0,10,0);
@@ -21,5 +22,6 @@ int main(void) {
 	
 	UltrasuoniTest();
 	
+	xRullo=xEventGroupCreate();			//creazione eventGroup
 	vTaskStartScheduler();
 }

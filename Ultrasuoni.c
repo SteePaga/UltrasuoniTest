@@ -11,7 +11,7 @@
 #include "Puls.h"
 #include "LCD.h"
 
-EventGroupHandle_t xServo;
+extern EventGroupHandle_t xRullo;
 
 void UltrasuoniInit(void){
 	//TriggerInit
@@ -30,18 +30,17 @@ void UltrasuoniInit(void){
 	GPIOA->AFR[0] &= ~GPIO_AFRL_AFSEL5_Msk;
 	GPIOA->AFR[0] |= GPIO_AFRL_AFSEL5_0;
 	
-	TIM2_CH1_InCapt_SM();					//impulso del trigger per avviare misurazione, timer PB6
-	TIM4_CH1_PWM();								//misurazione dell'impulso con l'echo, timer PA5
+	TIM2_CH1_InCapt_SM();							//impulso del trigger per avviare misurazione, timer PB6
+	TIM4_CH1_PWM();										//misurazione dell'impulso con l'echo, timer PA5
 }
 
 void UltrasuoniTest(void){
-	xTaskCreate(vTaskLed,     /* Pointer to the function that implements the task.   */
+	xTaskCreate(vTaskLedUltrasuoni,     /* Pointer to the function that implements the task.   */
 	"vTaskLed",    /* Text name for the task.  This is to facilitate debugging only. */
 	50,    /* Stack depth in words.                */
 	NULL,  /* We are not using the task parameter. */
 	1,     /* This task will run at priority 1.    */
 	NULL); /* We are not using the task handle.    */
-	xServo=xEventGroupCreate();	
 }
 
 void TIM2_IRQHandler(void){ 
@@ -50,13 +49,13 @@ void TIM2_IRQHandler(void){
 	durata=TIM2->CCR1+1;											//misurazione in us
 	durata=durata/58;													//converto in cm
 	if(durata<5)																					//se la distanza e' minore di 5 cm
-		xEventGroupSetBits(xServo,EVENT_RILEVA_OGGETTO);		//setto bit dell'event group
+		xEventGroupSetBits(xRullo,EVENT_RILEVA_OGGETTO);		//setto bit dell'event group
 	}
 
-void vTaskLed(void * pvParameters){
+void vTaskLedUltrasuoni(void * pvParameters){
 	const EventBits_t xBitsToWaitFor = EVENT_RILEVA_OGGETTO;				
 	while(1){
-		xEventGroupWaitBits(xServo,xBitsToWaitFor,pdTRUE,pdTRUE,portMAX_DELAY); 	//aspetto bit event group
+		xEventGroupWaitBits(xRullo,xBitsToWaitFor,pdTRUE,pdTRUE,portMAX_DELAY); 	//aspetto bit event group
 		LedRossoToggle();
 		vTaskDelay(100);									//lampeggio del led rosso
 		LedRossoToggle();									//ad intervalli di 100 ms
