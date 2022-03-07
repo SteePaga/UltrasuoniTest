@@ -20,7 +20,7 @@ int main(void) {
 	SwInit();
 	UltrasuoniInit();
 	
-	UltrasuoniTest();
+	UltrasuoniTestInit();
 	
 	xRullo=xEventGroupCreate();			//creazione eventGroup
 	vTaskStartScheduler();

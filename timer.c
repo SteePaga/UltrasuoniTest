@@ -267,7 +267,7 @@ void TIM4_CH1_PWM(void){
 	TIM4->PSC =80 - 1;
 	
 	//impostazione periodo
-	TIM4->ARR = 1500000-1;
+	TIM4->ARR = 500000-1;
 	
 	//configurazione PWM mode per l'uscita del output 1
 	TIM4->CCMR1 &= ~TIM_CCMR1_OC1M;
